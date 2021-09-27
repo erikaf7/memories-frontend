@@ -1,17 +1,15 @@
 import './App.css';
 import { Link, Router, Switch } from 'react-router-dom'
+import Homepage from './Homepage';
+import AllEntries from './AllEntries';
 
 //components
 
-
 function App() {
   return (
-    <div className="container">
-      <header>
-        /* Link components if needed */
-        <h1>Memories Book</h1>
-      </header>
-      /* Router components if needed */
+    <div>
+      {/* <Homepage />
+      <AllEntries /> */}
     </div>
   );
 }
