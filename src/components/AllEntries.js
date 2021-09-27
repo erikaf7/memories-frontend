@@ -20,9 +20,7 @@ export default function AllEntries(props) {
     }, [])
     if (error) {
         return (
-            <div>
-                <h2>Sorry, something went wrong.</h2>
-            </div>
+            <div className="alert alert-danger">Sorry, something went wrong. Please try again.</div>
         )
     }
     return (

@@ -58,7 +58,7 @@ export default function EntryEdit({ match }) {
         <div className="container">
             <Nav />
             <h2>edit memory</h2>
-            {error && <p>Something went wrong. Please try again.</p>}
+            {error && <div className="alert alert-danger">Sorry, something went wrong. Please try again.</div>}
             {entry && (
                 <EntryForm
                     entry={entry}
