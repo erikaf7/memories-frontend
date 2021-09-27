@@ -4,8 +4,6 @@ import { Link, Route, Switch } from 'react-router-dom'
 
 
 //components
-import ConnectionTestHome from './components/ConnectionTestHome';
-import ConnectionTestList from './components/ConnectionTestList';
 import EntryDetail from './components/EntryDetail';
 import EntryCreate from './components/EntryCreate';
 import Homepage from './components/Homepage';
