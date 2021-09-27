@@ -50,7 +50,7 @@ export default function EntryDetail({ match }) {
                 <img src={entry.img} />
                 <h1>{entry.title}</h1>
                 <p>{entry.description}</p>
-                <Link to="#">edit</Link>
+                <Link to={`/entries/${match.params.id}/edit`}>edit</Link>
                 <button onClick={onDeleteEntry}>delete</button>
             </div>
         </div>
