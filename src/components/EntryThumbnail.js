@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const apiURL = 'http://localhost:4000/entries'
+import { APIURL } from '../config'
 
 export default function EntryThumbnail({ entry }) {
-    const url = entry._id
+    const url = `/${entry._id}`
     return (
         <Link to={url}>
             <div>
