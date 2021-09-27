@@ -47,7 +47,7 @@ export default function EntryCreate() {
     }
 
     return (
-        <div>
+        <div className="container">
             <Nav />
             <h2>Create Entry</h2>
             {error && <p>Sorry, something went wrong. Please try again.</p>}
