@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { APIURL } from '../config'
 
 export default function EntryThumbnail({ entry }) {
-    const url = `/${entry._id}`
+    const url = `/entries/${entry._id}`
     return (
         <Link to={url}>
             <div>

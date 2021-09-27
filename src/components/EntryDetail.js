@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import { APIURL } from '../config'
+import Nav from '../Nav'
 
 export default function EntryDetail({ match }) {
     const [deleted, setDeleted] = useState(false)
@@ -35,12 +36,15 @@ export default function EntryDetail({ match }) {
     }
 
     return (
-        <div className="entry-card">
-            <img src={entry.img} />
-            <h1>{entry.title}</h1>
-            <p>{entry.description}</p>
-            <Link to="#">edit</Link>
-            <Link to="#">delete</Link>
+        <div className="container">
+            <Nav />
+            <div className="entry-card">
+                <img src={entry.img} />
+                <h1>{entry.title}</h1>
+                <p>{entry.description}</p>
+                <Link to="#">edit</Link>
+                <Link to="#">delete</Link>
+            </div>
         </div>
     )
 }
