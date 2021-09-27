@@ -25,7 +25,6 @@ export default function EntryCreate() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('button clicked')
         const url = `${APIURL}/entries/`
         fetch(url, {
             method: 'POST',
@@ -44,7 +43,7 @@ export default function EntryCreate() {
     }
 
     if (createdId) {
-        <Redirect to={`/entries/${createdId}`} />
+        return <Redirect to={`/entries/${createdId}`} />
     }
 
     return (
