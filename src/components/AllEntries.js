@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import EntryThumbnail from './EntryThumbnail'
-const apiURL = 'http://localhost:4000/entries'
+import { APIURL } from '../config'
+
 export default function AllEntries(props) {
     const [entries, setEntries] = useState([])
     const [error, setError] = useState(false)
-
+    const url = `${APIURL}/entries`
     useEffect(() => {
-        fetch(apiURL)
+        fetch(url)
             .then(response => response.json())
             .then(data => {
                 setEntries(data)
