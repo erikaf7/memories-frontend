@@ -25,7 +25,6 @@ function App() {
         {/*<Route exact path="/" component={ ConnectionTestHome } /> */}
         {/*<Route exact path="/entries" component={ ConnectionTestList } /> */}
       {/*</Switch>*/}
-      
     </div>
   );
 }
