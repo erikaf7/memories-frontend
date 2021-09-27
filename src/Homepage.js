@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Homepage() {
     return (
@@ -6,11 +7,10 @@ export default function Homepage() {
             <h1>memories</h1>
             <h2>you create the story</h2>
             <hr></hr>
-            <a href='#'>create entry</a>
+            <Link to="/entries">view entries</Link>
             <br />
-            <a href='#'>view all entries</a>
+            <Link to="/">create entry</Link>
+            <br />
         </div>
-
-
     )
 }
