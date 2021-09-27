@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import EntryThumbnail from './EntryThumbnail'
 import { APIURL } from '../config'
+import Nav from '../Nav'
 
 export default function AllEntries(props) {
     const [entries, setEntries] = useState([])
@@ -26,11 +27,12 @@ export default function AllEntries(props) {
     }
     return (
         <div className="container">
-            <h1>all memories</h1>
+            <Nav />
+            <h2>all memories</h2>
             <hr></hr>
             <div className="thumbnails-container">
                 {entries.map(entry => (
-                    <EntryThumbnail entry={entry}></EntryThumbnail>
+                    <EntryThumbnail entry={entry} key={entry._id}></EntryThumbnail>
                 ))}
             </div>
         </div>
