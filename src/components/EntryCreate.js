@@ -50,7 +50,7 @@ export default function EntryCreate() {
         <div className="container">
             <Nav />
             <h2>Create Entry</h2>
-            {error && <p>Sorry, something went wrong. Please try again.</p>}
+            {error && <div className="alert alert-danger">Sorry, something went wrong. Please try again.</div>}
             <EntryForm
                 entry={entry}
                 handleChange={handleChange}
