@@ -30,7 +30,7 @@ export default function AllEntries(props) {
             <Nav />
             <h2>all memories</h2>
             <hr></hr>
-            <div className="thumbnails-container">
+            <div>
                 {entries.map(entry => (
                     <EntryThumbnail entry={entry} key={entry._id}></EntryThumbnail>
                 ))}

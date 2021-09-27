@@ -46,12 +46,16 @@ export default function EntryDetail({ match }) {
     return (
         <div className="container">
             <Nav />
-            <div className="entry-card">
+            <div className="card">
                 {entry.img ? <img src={entry.img} /> : <div></div>}
-                <h1>{entry.title}</h1>
-                <p>{entry.description}</p>
-                <Link to={`/entries/${match.params.id}/edit`}>edit</Link>
-                <button onClick={onDeleteEntry}>delete</button>
+                <div className="card-body">
+                    <h1 className="card-title">{entry.title}</h1>
+                    <p className="card-text">{entry.description}</p>
+                </div>
+                <div className="btn-group">
+                    <Link to={`/entries/${match.params.id}/edit`} className="btn btn-light">edit</Link>
+                    <button className="btn btn-secondary" onClick={onDeleteEntry}>delete</button>
+                </div>
             </div>
         </div>
     )

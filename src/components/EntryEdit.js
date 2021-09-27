@@ -55,7 +55,7 @@ export default function EntryEdit({ match }) {
     }
 
     return (
-        <div>
+        <div className="container">
             <Nav />
             <h2>edit memory</h2>
             {error && <p>Something went wrong. Please try again.</p>}

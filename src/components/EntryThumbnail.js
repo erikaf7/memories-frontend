@@ -6,8 +6,10 @@ export default function EntryThumbnail({ entry }) {
     const url = `/entries/${entry._id}`
     return (
         <Link to={url}>
-            <div>
-                <h3>{entry.title}</h3>
+            <div className="card">
+                <div className="card-body">
+                    <h3 className="card-title">{entry.title}</h3>
+                </div>
                 {entry.img ? <img src={entry.img} /> : <div></div>}
             </div>
         </Link>
