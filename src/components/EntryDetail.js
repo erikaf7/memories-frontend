@@ -47,7 +47,7 @@ export default function EntryDetail({ match }) {
         <div className="container">
             <Nav />
             <div className="container d-flex flex-wrap justify-content-center mt-5">
-                <div className="card card-detail">
+                <div className="card card-detail mb-3">
                     {entry.img ? <img src={entry.img} /> : <div></div>}
                     <div className="card-body">
                         <h1 className="card-title">{entry.title}</h1>
