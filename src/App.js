@@ -1,5 +1,8 @@
 import './App.css';
+
 import { Link, Route, Switch } from 'react-router-dom'
+import Homepage from './Homepage';
+import AllEntries from './AllEntries';
 
 //components
 import ConnectionTestHome from './components/ConnectionTestHome';
