@@ -8,7 +8,7 @@ export default function EntryThumbnail({ entry }) {
         <Link to={url}>
             <div>
                 <h3>{entry.title}</h3>
-                <img src={entry.img} />
+                {entry.img ? <img src={entry.img} /> : <div></div>}
             </div>
         </Link>
     )
