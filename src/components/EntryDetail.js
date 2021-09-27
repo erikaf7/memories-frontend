@@ -7,6 +7,14 @@ export default function EntryDetail({ match }) {
     const [deleted, setDeleted] = useState(false)
     const [error, setError] = useState(false)
     const [entry, setEntry] = useState(null)
+
+    const onDeleteEntry = (e) => {
+        const url = `${APIURL}/entries/${match.params.id}`
+        fetch(url, { method: 'DELETE' })
+            .then(res => { setDeleted(true) })
+            .catch(console.error)
+    }
+
     useEffect(() => {
         const url = `${APIURL}/entries/${match.params.id}`
         fetch(url)
@@ -43,7 +51,7 @@ export default function EntryDetail({ match }) {
                 <h1>{entry.title}</h1>
                 <p>{entry.description}</p>
                 <Link to="#">edit</Link>
-                <Link to="#">delete</Link>
+                <button onClick={onDeleteEntry}>delete</button>
             </div>
         </div>
     )
