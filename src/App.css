@@ -8,6 +8,20 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+  color: #f5cac3,
+}
+
 .card-title, .card-text {
   color: #84a59d;
+}
+
+.card-thumbnail{
+  max-width: 300px;
+  min-width: 100px;
+  width: 70%;
+}
+
+.card-detail {
+  max-width: 70%;
 }

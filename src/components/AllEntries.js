@@ -28,9 +28,11 @@ export default function AllEntries(props) {
             <Nav />
             <h2>all memories</h2>
             <hr></hr>
-            <div>
+            <div className="container d-flex flex-wrap justify-content-center align-items-center">
                 {entries.map(entry => (
-                    <EntryThumbnail entry={entry} key={entry._id}></EntryThumbnail>
+                    <div key={entry._id} >
+                        <EntryThumbnail entry={entry}></EntryThumbnail>
+                    </div>
                 ))}
             </div>
         </div>
