@@ -8,8 +8,8 @@ import AllEntries from './AllEntries';
 function App() {
   return (
     <div>
-      {/* <Homepage />
-      <AllEntries /> */}
+      <Homepage />
+      <AllEntries />
     </div>
   );
 }
