@@ -9,7 +9,7 @@ export default function Homepage() {
             <hr></hr>
             <Link to="/entries">view entries</Link>
             <br />
-            <Link to="/">create entry</Link>
+            <Link to="/entries/create">create entry</Link>
             <br />
         </div>
     )
