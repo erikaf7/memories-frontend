@@ -19,7 +19,6 @@ export default function EntryForm({ entry, handleSubmit, handleChange }) {
                 value={entry.img}
                 name="img"
                 onChange={handleChange}
-                required
                 id="img"
             />
 

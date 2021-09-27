@@ -47,7 +47,7 @@ export default function EntryDetail({ match }) {
         <div className="container">
             <Nav />
             <div className="entry-card">
-                <img src={entry.img} />
+                {entry.img ? <img src={entry.img} /> : <div></div>}
                 <h1>{entry.title}</h1>
                 <p>{entry.description}</p>
                 <Link to={`/entries/${match.params.id}/edit`}>edit</Link>
