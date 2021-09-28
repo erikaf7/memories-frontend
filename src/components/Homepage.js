@@ -7,7 +7,7 @@ export default function Homepage() {
             <div className="card align-self-center">
                 <div className="row g-0">
                     <div className="col-md-6">
-                        <img src="https://images.unsplash.com/photo-1535837487710-a191373a20ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=928&q=80" className="img-fluid rounded-start"></img>
+                        <img src="https://images.unsplash.com/photo-1535837487710-a191373a20ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=928&q=80" alt="" className="img-fluid rounded-start"></img>
                     </div>
                     <div className="col-md-6 d-flex align-items-center">
                         <div className="card-body d-flex flex-column justify-content-center align-items-center">
