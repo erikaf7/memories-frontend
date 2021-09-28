@@ -17,11 +17,30 @@ a:hover{
 }
 
 .card-thumbnail{
-  max-width: 300px;
+  max-width: 400px; 
   min-width: 100px;
-  width: 70%;
+  width: 60%;
+  /* display: inline-flex;
+  min-width: 10%;
+  max-width: 30%; */
 }
 
 .card-detail {
-  max-width: 70%;
+  max-width: 500px;
 }
+
+.nav-item-custom{
+  font-size: 1.2rem;
+}
+
+.nav-item-custom:hover{
+  color: #f5cac3;
+}
+
+.form-label{
+  color: #84a59d;
+}
+
+/* .custom-banner{
+  max-height:
+} */

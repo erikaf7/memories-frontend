@@ -1,29 +1,14 @@
 import React from 'react'
+import { useContext } from 'react';
 import { useState } from 'react';
-import { Redirect } from 'react-router-dom';
-import { APIURL } from '../config.js';
 import Nav from '../Nav.js';
+import { login } from '../utils/login.js';
+import { UserContext } from './UserContext.js';
 
 
 export default function UserSignup() { 
-    const initialUserState = {
-        username: '',
-        password: '',
-    }
-    const [user, setUser] = useState(initialUserState)
+    const {user, setUser} = useContext(UserContext);
     const [error, setError] = useState(false)
-
-    const handleChange = (e) => {
-        e.persist()
-        setUser({
-            ...user,
-            [e.target.name]: e.target.value
-        })
-    }
-
-    const handleSubmit = (e) => {
-
-    }
 
     return (
         <div className="container">
@@ -31,15 +16,13 @@ export default function UserSignup() {
             <h2>Sign up</h2>
             {error && <div className="alert alert-danger">Sorry, something went wrong. Please try again.</div>}
             <div className="container">
-            <form onSubmit= {handleSubmit}>
+            <form>
                 <label htmlFor="username" className="form-label">username</label>
                 <input
                     type="text"
                     className="form-control mb-3"
                     placeholder="choose a username..."
-                    value={user.username}
                     name="username"
-                    onChange={handleChange}
                     required
                     id="username"
                 />
@@ -49,13 +32,15 @@ export default function UserSignup() {
                     type="password"
                     className="form-control mb-3"
                     placeholder="create a password..."
-                    value={user.password}
                     name="password"
-                    onChange={handleChange}
                     required
                     id="password"
                 />
-                <button className="btn btn-secondary" type="submit">create account</button>
+                <pre>{JSON.stringify(user, null, 2)}</pre>
+                <button onClick = {async () => {
+                    const user = await login()
+                    setUser(user)
+                }} className="btn btn-secondary">sign in</button>
             </form>
         </div>
         </div>
