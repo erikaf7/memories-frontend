@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import EntryThumbnail from './EntryThumbnail'
 import { APIURL } from '../config'
 import Nav from '../Nav'
@@ -17,7 +16,7 @@ export default function AllEntries(props) {
             .catch(() => {
                 setError(true)
             })
-    }, [])
+    }, [url])
     if (error) {
         return (
             <div className="alert alert-danger">Sorry, something went wrong. Please try again.</div>
