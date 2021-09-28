@@ -8,6 +8,8 @@ export default function Nav() {
             <Link to="/" className="nav-link-light">home</Link>
             <Link to="/entries" className="nav-link-light">view all entries</Link>
             <Link to="/entries/create" className="nav-link-light">create entry</Link>
+            <Link to="/signup" className="nav-link-light">sign up</Link>
+            <Link to="/signin" className="nav-link-light">sign in</Link> 
         </div >
     )
 }

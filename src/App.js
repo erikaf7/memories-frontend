@@ -9,6 +9,8 @@ import EntryCreate from './components/EntryCreate';
 import Homepage from './components/Homepage';
 import AllEntries from './components/AllEntries';
 import EntryEdit from './components/EntryEdit';
+import UserSignup from './components/UserSignup';
+import UserSignin from './components/UserSignin';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route exact path="/entries/create" component={EntryCreate} />
         <Route exact path="/entries/:id" component={EntryDetail} />
         <Route exact path="/entries/:id/edit" component={EntryEdit} />
+        <Route exact path="/signup" component={UserSignup} />
+        <Route exact path="/signin" component={UserSignin} />
       </Switch>
     </div>
   );
