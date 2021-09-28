@@ -44,3 +44,7 @@ a:hover{
 /* .custom-banner{
   max-height:
 } */
+
+.debug{
+  background-color: red;
+}
