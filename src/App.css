@@ -17,12 +17,8 @@ a:hover{
 }
 
 .card-thumbnail{
-  max-width: 400px; 
+  max-width: 300px; 
   min-width: 100px;
-  width: 60%;
-  /* display: inline-flex;
-  min-width: 10%;
-  max-width: 30%; */
 }
 
 .card-detail {
@@ -41,6 +37,18 @@ a:hover{
   color: #84a59d;
 }
 
-/* .custom-banner{
-  max-height:
-} */
+.debug{
+  background-color: red;
+}
+
+.hover-effect:hover{
+  background-color: #f5cac3;
+} 
+
+.entry-title{
+  font-size: 3rem;
+}
+
+.entry-text{
+  font-size: 2em;
+}
