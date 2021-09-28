@@ -9,7 +9,7 @@ export default function EntryThumbnail({ entry }) {
             <div className="card mb-3 mx-2 justify-self-center">
                 <div className="card-body d-flex flex-column justify-content-center hover-effect">
                     <h3 className="card-title card-title-resize">{entry.title}</h3>
-                    {entry.img ? <img src={entry.img} alt={entry.title} className="card-img" /> : <div></div>}
+                    {entry.img ? <img src={entry.img} alt={entry.title} className="card-img img-fluid" /> : <div></div>}
                 </div>
             </div>
         </Link>
