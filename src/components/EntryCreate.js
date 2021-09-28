@@ -52,7 +52,7 @@ export default function EntryCreate() {
             <div className="container d-flex align-items-center justify-content-center my-5">
                 <div className="card align-self-center">
                     <div className="row g-0">
-                        <div className="col-md-6">
+                        <div className="col-md-6 d-flex">
                             <img src="https://images.unsplash.com/photo-1595981234058-a9302fb97229?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" className="img-fluid rounded-start"></img>
                         </div>
                         <div className="col-md-6 d-flex align-items-center">

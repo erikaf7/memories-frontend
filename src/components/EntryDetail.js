@@ -46,19 +46,26 @@ export default function EntryDetail({ match }) {
     return (
         <div className="container">
             <Nav />
-            <div className="container d-flex flex-wrap justify-content-center mt-5">
-                <div className="card card-detail mb-3">
-                    {entry.img ? <img src={entry.img} alt={entry.title} /> : <div></div>}
-                    <div className="card-body">
-                        <h1 className="card-title">{entry.title}</h1>
-                        <p className="card-text">{entry.description}</p>
-                    </div>
-                    <div className="btn-group">
-                        <Link to={`/entries/${match.params.id}/edit`} className="btn btn-light">edit</Link>
-                        <button className="btn btn-secondary" onClick={onDeleteEntry}>delete</button>
+
+            <div className="container my-5 d-flex align-items-center justify-content-center">
+                <div className="card">
+                    <div className="row g-0">
+                        <div className="col-md-8 d-flex">
+                            {entry.img ? <img src={entry.img} alt={entry.title} className="img-fluid rounded-start" /> : <div></div>}
+                        </div>
+                        <div className="col-md-4 d-flex">
+                            <div className="card-body d-flex flex-column justify-content-around">
+                                <h1 className="card-title entry-title">{entry.title}</h1>
+                                <p className="card-text mt-5 entry-text">{entry.description}</p>
+                                <div className="btn-group mt-5">
+                                    <Link to={`/entries/${match.params.id}/edit`} className="btn btn-outline-secondary">edit</Link>
+                                    <button className="btn btn-outline-secondary" onClick={onDeleteEntry}>delete</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </div>
     )
 }
