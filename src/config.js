@@ -1,4 +1,4 @@
 export const APIURL =
-process.env.NODE_ENV == 'production'
-    ? 'https://app-memories-backend.herokuapp.com'
-    : 'http://localhost:4000';
+    window.location.hostname === 'localhost'
+      ? 'http://localhost:4000'
+      : 'https://app-memories-backend.herokuapp.com';
