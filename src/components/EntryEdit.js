@@ -61,7 +61,7 @@ export default function EntryEdit({ match }) {
                 <div className="card align-self-center">
                     <div className="row g-0">
                         <div className="col-md-6 d-flex">
-                            {entry && entry.img ? <img src={entry.img} className="img-fluid rounded-start" /> : <img src="https://images.unsplash.com/photo-1595981234058-a9302fb97229?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" className="img-fluid rounded-start" />}
+                            {entry && entry.img ? <img src={entry.img} className="img-fluid rounded-start" alt={entry.title} /> : <img src="https://images.unsplash.com/photo-1595981234058-a9302fb97229?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" className="img-fluid rounded-start" alt="placeholder" />}
                         </div>
                         <div className="col-md-6 d-flex align-items-center">
                             <div className="card-body d-flex flex-column justify-content-center align-items-center">
