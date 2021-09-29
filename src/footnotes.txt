@@ -1,0 +1,12 @@
+-----SOURCES/FOOTNOTES-----
+
+The following lesson notes were very helpful to us in building out this project:
+
+https://git.generalassemb.ly/seir-8-02/student-resources/tree/main/3_full_stack_dev/w08d03/instructor_notes
+
+https://git.generalassemb.ly/seir-8-02/student-resources/tree/main/3_full_stack_dev/w08d04/instructor_notes
+
+https://git.generalassemb.ly/seir-8-02/student-resources/tree/main/3_full_stack_dev/w08d02/instructor_notes
+
+https://git.generalassemb.ly/seir-8-02/hfb
+

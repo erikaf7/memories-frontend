@@ -37,10 +37,6 @@ a:hover{
   color: #84a59d;
 }
 
-.debug{
-  background-color: red;
-}
-
 .hover-effect:hover{
   background-color: #f5cac3;
 } 
