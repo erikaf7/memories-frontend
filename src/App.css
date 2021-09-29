@@ -48,3 +48,16 @@ a:hover{
 .entry-text{
   font-size: 1.7em;
 }
+
+.loading{
+  border: 20px solid #f5cac3;
+  border-top: 20px solid white;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: beachball 1s linear infinite;
+}
+@keyframes beachball {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
