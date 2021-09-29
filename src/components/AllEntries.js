@@ -3,7 +3,7 @@ import EntryThumbnail from './EntryThumbnail'
 import { APIURL } from '../config'
 import Nav from '../Nav'
 
-export default function AllEntries(props) {
+export default function AllEntries() {
     const [entries, setEntries] = useState([])
     const [error, setError] = useState(false)
     const url = `${APIURL}/entries`
