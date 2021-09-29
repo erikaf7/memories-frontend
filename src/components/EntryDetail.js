@@ -47,13 +47,10 @@ export default function EntryDetail({ match }) {
     return (
         <div className="container">
             <Nav />
-
             <div className="container my-5 d-flex align-items-center justify-content-center">
                 <div className="card">
                     <div className="row g-0">
-                        <div className="col-sm-8 d-flex">
-                            {entry.img ? <img src={entry.img} alt={entry.title} className="img-fluid rounded-start" /> : <div></div>}
-                        </div>
+                        {entry.img ? <div className="col-sm-8 d-flex"><img src={entry.img} alt={entry.title} className="img-fluid rounded-start" /></div> : <div></div>}
                         <div className="col-sm-4 d-flex">
                             <div className="card-body d-flex flex-column justify-content-around align-items-stretch">
                                 <h1 className="card-title entry-title">{entry.title}</h1>
