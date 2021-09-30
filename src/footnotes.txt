@@ -11,3 +11,5 @@ https://git.generalassemb.ly/seir-8-02/student-resources/tree/main/3_full_stack_
 https://git.generalassemb.ly/seir-8-02/hfb
 
 This W3Schools article inspired our loading "beachball" effect: https://www.w3schools.com/howto/howto_css_loader.asp
+
+Alli's Facenook project inspired a lot of our search functionality.

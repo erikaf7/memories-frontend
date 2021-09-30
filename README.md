@@ -24,6 +24,6 @@ To view the memories application, go to https://app-memories-frontend.herokuapp.
 - Bootstrap
 
 ## Approach Taken
-This application was created with React and uses Bootstrap for the styling and accessibility of different devices. We wanted the layout of the application to be welcoming and easily accessible to everyone.
+This application was created with React and uses Bootstrap for the styling and accessibility of different devices. We wanted the layout of the application to be welcoming and easily accessible to everyone. Please view the footnotes.txt file for our references and sources on this project.
 
 
