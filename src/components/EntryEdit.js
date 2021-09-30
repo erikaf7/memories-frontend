@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 import { APIURL } from '../config';
 import EntryForm from './EntryForm';
-import Nav from '../Nav';
+import Header from './Header';
 
 export default function EntryEdit({ match }) {
     const [entry, setEntry] = useState(null)
@@ -56,7 +56,7 @@ export default function EntryEdit({ match }) {
 
     return (
         <div className="container">
-            <Nav />
+            <Header searchEnabled="false" />
             <div className="container d-flex align-items-center justify-content-center my-5">
                 <div className="card align-self-center">
                     <div className="row g-0">

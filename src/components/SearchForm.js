@@ -11,7 +11,7 @@ export default function SearchForm({ searchString, setSearchString }) {
         setSearchString(waitSearchString)
     }
     return (
-        <div className="container mt-3 ml-1">
+        <div className="container mt-3">
             <form onSubmit={e => handleSubmit(e)}>
                 <div className="row">
                     <div className="col-sm-8">
