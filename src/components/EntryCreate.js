@@ -19,7 +19,7 @@ export default function EntryCreate() {
         e.persist()
         setEntry({
             ...entry,
-            [e.target.name]: e.target.value.toLowerCase()
+            [e.target.name]: e.target.value
         })
     }
 

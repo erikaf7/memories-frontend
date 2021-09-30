@@ -6,7 +6,7 @@ export default function SearchResult({ entries, searchString }) {
     searchString = searchString.toLowerCase();
     console.log(searchString)
     console.log(entries)
-    const matchingEntries = entries.filter(entry => entry.title === searchString)
+    const matchingEntries = entries.filter(entry => entry.title.toLowerCase() === searchString)
     console.log(matchingEntries)
     if (!matchingEntries) {
         return (

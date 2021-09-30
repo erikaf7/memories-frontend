@@ -53,7 +53,7 @@ export default function EntryDetail({ match }) {
                         {entry.img ? <div className="col-sm-8 d-flex"><img src={entry.img} alt={entry.title} className="img-fluid rounded-start" /></div> : <div></div>}
                         <div className="col-sm-4 d-flex">
                             <div className="card-body d-flex flex-column justify-content-around align-items-stretch">
-                                <h1 className="card-title entry-title">{entry.title}</h1>
+                                <h1 className="card-title entry-title">{entry.title.toLowerCase()}</h1>
                                 <p className="card-text mt-5 entry-text">{entry.description}</p>
                                 <div className="btn-group mt-5">
                                     <Link to={`/entries/${match.params.id}/edit`} className="btn btn-outline-secondary">edit</Link>
