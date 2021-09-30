@@ -28,10 +28,10 @@ export default function AllEntries() {
     if (entries.length === 0) {
         return (
             <div className="container">
-                <Header searchString={searchString} entries={entries} setSearchString={setSearchString} />
+                <Header searchEnabled="false" />
                 <div className="d-flex flex-column align-items-center">
                     <h2 className="my-5">No memories here yet...time to make some!</h2>
-                    <img src="https://images.unsplash.com/photo-1449237386841-d30ba36cd1bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1586&q=80" className="img img-fluid rounded" alt="photos arranged on a table." />
+                    <img src="https://images.unsplash.com/photo-1449237386841-d30ba36cd1bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1586&q=80" className="img img-fluid rounded img-large" alt="photos arranged on a table." />
                     <Link to="/entries/create" className="my-5 btn btn-outline-light">create a new memory</Link>
                 </div>
             </div>

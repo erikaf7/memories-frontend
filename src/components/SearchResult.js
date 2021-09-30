@@ -9,7 +9,7 @@ export default function SearchResult({ entries, searchString, setSearchString })
     if (matchingEntries.length === 0) {
         return (
             <div className="container">
-                <Header entries={entries} searchString={searchString} setSearchString={setSearchString} />
+                <Header entries={entries} searchString={searchString} setSearchString={setSearchString} search />
                 <div className="d-flex flex-column align-items-center">
                     <h2 className="my-3">No matches for '{searchString}.'' Why not create your own?</h2>
                     <Link to="/entries/create" className="my-5 btn btn-outline-light">create a new memory</Link>
