@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function EntryForm({ entry, handleSubmit, handleChange }) {
     return (
@@ -38,7 +39,10 @@ export default function EntryForm({ entry, handleSubmit, handleChange }) {
                     required
                     id="description"
                 />
-                <button className="btn btn-secondary" type="submit">submit</button>
+                <div className="btn-group">
+                    <button className="btn btn-secondary" type="submit">submit</button>
+                    <Link to='/entries' className="btn btn-outline-secondary hover-effect">back</Link>
+                </div>
             </form>
         </div>
     )

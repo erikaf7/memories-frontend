@@ -20,7 +20,7 @@ export default function SearchForm({ searchString, setSearchString }) {
                         </input>
                     </div>
                     <div className="col-sm-4">
-                        <button className="btn btn-secondary" type="submit"
+                        <button className="btn btn-secondary hover-effect" type="submit"
                             onClick={e => handleSubmit(e)}>search
                         </button>
                     </div>
