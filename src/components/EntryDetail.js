@@ -58,6 +58,7 @@ export default function EntryDetail({ match }) {
                                 <div className="btn-group mt-5">
                                     <Link to={`/entries/${match.params.id}/edit`} className="btn btn-outline-secondary">edit</Link>
                                     <button className="btn btn-outline-secondary" onClick={onDeleteEntry}>delete</button>
+                                    <Link to='/entries' className="btn btn-outline-secondary hover-effect">back</Link>
                                 </div>
                             </div>
                         </div>
