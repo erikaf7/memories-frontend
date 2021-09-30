@@ -11,15 +11,23 @@ export default function SearchForm({ searchString, setSearchString }) {
         setSearchString(waitSearchString)
     }
     return (
-        <form onSubmit={e => handleSubmit(e)}>
-            <input
-                type="text" value={waitSearchString} placeholder='Search for a post...' onChange={e => handleChange(e)} id="search-input">
+        <div className="container mt-3 ml-1">
+            <form onSubmit={e => handleSubmit(e)}>
+                <div className="row">
+                    <div className="col-sm-8">
+                        <input
+                            className="form-control mb-3" type="text" value={waitSearchString} placeholder='Search for a memory...' onChange={e => handleChange(e)} id="search-input">
+                        </input>
+                    </div>
+                    <div className="col-sm-4">
+                        <button className="btn btn-secondary" type="submit"
+                            onClick={e => handleSubmit(e)}>search
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-            </input>
-            <button
-                onClick={e => handleSubmit(e)}>
-            </button>
-        </form>
 
     )
 }

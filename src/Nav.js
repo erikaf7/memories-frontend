@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Nav() {
     return (
-        <div className="nav flex-column mt-3 align-items-end">
+        <div className="nav flex-column align-items-end">
             <Link to="/" className="nav-item nav-link-light nav-item-custom">
                 <h1>memories</h1>
             </Link>
