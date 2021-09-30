@@ -2,8 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import { APIURL } from '../config.js';
-import Nav from '../Nav.js';
 import EntryForm from './EntryForm.js';
+import Header from './Header.js';
 
 export default function EntryCreate() {
     const initialEntryState = {
@@ -48,7 +48,7 @@ export default function EntryCreate() {
 
     return (
         <div className="container">
-            <Nav />
+            <Header searchEnabled='false' />
             <div className="container d-flex align-items-center justify-content-center my-5">
                 <div className="card align-self-center">
                     <div className="row g-0">

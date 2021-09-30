@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import { APIURL } from '../config'
-import Nav from '../Nav'
+import Header from './Header'
 
 export default function EntryDetail({ match }) {
     const [deleted, setDeleted] = useState(false)
@@ -46,7 +46,7 @@ export default function EntryDetail({ match }) {
 
     return (
         <div className="container">
-            <Nav />
+            <Header searchEnabled="false" />
             <div className="container my-5 d-flex align-items-center justify-content-center">
                 <div className="card">
                     <div className="row g-0">

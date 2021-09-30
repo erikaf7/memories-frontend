@@ -1,24 +1,27 @@
 import React from 'react'
 import EntryThumbnail from './EntryThumbnail'
-import Nav from '../Nav';
+import Header from './Header';
+import { Link } from 'react-router-dom';
 
-export default function SearchResult({ entries, searchString }) {
+export default function SearchResult({ entries, searchString, setSearchString }) {
     searchString = searchString.toLowerCase();
-    console.log(searchString)
-    console.log(entries)
     const matchingEntries = entries.filter(entry => entry.title.toLowerCase() === searchString)
-    console.log(matchingEntries)
-    if (!matchingEntries) {
+    if (matchingEntries.length === 0) {
         return (
-            <h2>no matches found</h2>
+            <div className="container">
+                <Header entries={entries} searchString={searchString} setSearchString={setSearchString} />
+                <div className="d-flex flex-column align-items-center">
+                    <h2 className="my-3">No matches for '{searchString}.'' Why not create your own?</h2>
+                    <Link to="/entries/create" className="my-5 btn btn-outline-light">create a new memory</Link>
+                </div>
+            </div>
         )
     }
 
     return (
         <div className="container">
-            <Nav />
-            <h2>results for '{searchString}'</h2>
-            <hr></hr>
+            <Header entries={entries} searchString={searchString} setSearchString={setSearchString} searchEnabled="false" />
+            <h2 className="my-2">results for '{searchString}'</h2>
             <div className="container d-flex flex-wrap justify-content-center align-items-stretch">
                 {matchingEntries.map(entry => (
                     <div key={entry._id} className="d-flex justify-content-center">
