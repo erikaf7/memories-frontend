@@ -49,20 +49,17 @@ export default function AllEntries() {
 
     return (
         <div className="container">
-            {/* <Nav /> */}
             <div className="row d-flex align-items-center mt-5">
-                <div className="col-sm-2">
-                    <h2>all memories</h2>
-                </div>
-                <div className="col-sm-8">
+                <div className="col-sm-6">
                     <SearchForm searchString={searchString} setSearchString={setSearchString} entries={entries} />
                 </div>
-                <div className="col-sm-2">
+                <div className="col-sm-6">
                     <Nav />
                 </div>
 
             </div>
             <hr></hr>
+            <h2 className="mb-3">all memories</h2>
             <div className="container d-flex flex-wrap justify-content-center align-items-stretch">
                 {entries.map(entry => (
                     <div key={entry._id} className="d-flex justify-content-center">
