@@ -3,10 +3,13 @@ import EntryThumbnail from './EntryThumbnail'
 import { APIURL } from '../config'
 import Nav from '../Nav'
 import { Link } from 'react-router-dom'
+import SearchResult from './SearchResult'
+import SearchForm from './SearchForm'
 
 export default function AllEntries() {
     const [entries, setEntries] = useState([])
     const [error, setError] = useState(false)
+    const [searchString, setSearchString] = useState('')
     const url = `${APIURL}/entries`
     useEffect(() => {
         fetch(url)
@@ -38,11 +41,18 @@ export default function AllEntries() {
         )
     }
 
+    if (searchString) {
+        return (
+            <SearchResult searchString={searchString} entries={entries} />
+        )
+    }
+
     return (
         <div className="container">
             <Nav />
             <h2>all memories</h2>
             <hr></hr>
+            <SearchForm searchString={searchString} setSearchString={setSearchString} entries={entries} />
             <div className="container d-flex flex-wrap justify-content-center align-items-stretch">
                 {entries.map(entry => (
                     <div key={entry._id} className="d-flex justify-content-center">
