@@ -1,7 +1,6 @@
 import React from 'react'
 import EntryThumbnail from './EntryThumbnail'
 import Nav from '../Nav';
-import { APIURL } from '../config';
 
 export default function SearchResult({ entries, searchString }) {
     searchString = searchString.toLowerCase();
